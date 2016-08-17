@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+
+require 'claims'
+
+input_file = ARGV[0]
+output = Claims::Processor.new(input_file).process
+p output

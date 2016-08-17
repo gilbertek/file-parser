@@ -2,4 +2,9 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-# gem "rails"
+gem 'rspec', '~> 3.5'
+gem 'rake' , '~> 11.2'
+gem 'byebug'
+gem 'pry-byebug'
+gem 'hirb'
+
