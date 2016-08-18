@@ -1,6 +1,9 @@
 lib_path = File.expand_path(File.join(File.dirname(__FILE__), "..", "lib"))
 Dir["#{lib_path}/**/*.rb"].each { |f| require f }
 
+# load support files
+Dir[File.dirname(__FILE__) + '/support/**/*.rb'].each { |f| require f }
+
 require 'pry'
 
 RSpec.configure do |config|
