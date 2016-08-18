@@ -1,5 +1,5 @@
 class PersonCommaFileParser
-  attr_reader :person_attrs
+  attr_reader :person_hash
 
   DELIMITER_PATTERN = /\,./.freeze
 
@@ -8,6 +8,10 @@ class PersonCommaFileParser
   def initialize(data)
     @data = data
     @person_hash = build_from_data
+  end
+
+  def normalize
+    Student.new(person_hash)
   end
 
   def self.is_comma_separated? line

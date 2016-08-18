@@ -13,6 +13,9 @@ module TestDataHelper
     ].join("\n")
   end
 
+
+
+
   def output_by_date_of_birth
     [
       'Cummerata Elliot New York City 4/3/1947 Neon Carrot',
@@ -26,6 +29,7 @@ module TestDataHelper
       'Kirlin Mckayla Atlanta 5/29/1986 Maroon',
     ].join("\n")
   end
+
 
   def output_by_last_name
     [
