@@ -1,9 +1,0 @@
-#!/usr/bin/env ruby
-
-$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-
-require 'app'
-
-input_file = ARGV[0]
-output = App::Processor.new(input_file).process
-p output

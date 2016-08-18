@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe Processor do
+describe App::Processor do
   include TestDataHelper
-  let(:files) { Dir.glob(File.dirname(__FILE__) + '/../../data/*.txt') }
-  let(:subject) { Processor.new(file_list: files) }
+  let(:files) { Dir.glob(File.dirname(__FILE__) + '/../../../data/*.txt') }
+  let(:subject) { described_class.new(file_list: files) }
 
   describe '#ascending_by_campus_and_last_name' do
     it 'returns students sorted by campus and lastname' do
