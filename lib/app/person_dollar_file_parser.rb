@@ -1,7 +1,5 @@
 module App
   class PersonDollarFileParser
-    attr_reader :person_hash
-
     DELIMITER_PATTERN = /\s+\$\s+/.freeze
 
     HEADERS = ['last_name', 'first_name', 'middle_initial', 'campus', 'date_of_birth', 'favorite_color'].freeze
@@ -21,7 +19,7 @@ module App
 
     private
 
-    attr_reader :data
+    attr_reader :data, :person_hash
 
     def build_from_data
       HEADERS.zip(data.split(DELIMITER_PATTERN)).to_h

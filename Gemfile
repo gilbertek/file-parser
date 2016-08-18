@@ -5,6 +5,4 @@ source "https://rubygems.org"
 gem 'rspec', '~> 3.5'
 gem 'rake' , '~> 11.2'
 gem 'byebug'
-gem 'awesome_print'
-gem 'hirb'
 

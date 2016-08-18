@@ -30,7 +30,6 @@ module App
       File.open(file_path, 'r').each_line do |line|
         result << parse(line.chomp)
       end
-
       result
     end
 

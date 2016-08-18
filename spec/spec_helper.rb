@@ -4,7 +4,7 @@ Dir["#{lib_path}/**/*.rb"].each { |f| require f }
 # load support files
 Dir[File.dirname(__FILE__) + '/support/**/*.rb'].each { |f| require f }
 
-require 'pry'
+require 'byebug'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

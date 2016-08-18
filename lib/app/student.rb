@@ -1,3 +1,5 @@
+require 'date'
+
 module App
   class Student
     attr_reader :first_name,
@@ -21,7 +23,7 @@ module App
         normalize_campus
         calculate_age
       else
-        raise ArguementError
+        fail ArgumentError, 'Invalid arguments'
       end
     end
 
