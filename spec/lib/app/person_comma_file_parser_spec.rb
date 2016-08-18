@@ -9,4 +9,10 @@ describe App::PersonCommaFileParser do
       expect(subject.normalize).to be_a_kind_of(App::Student)
     end
   end
+
+  describe '.is_comma_separated?' do
+    it 'returns true for valid comma separated file' do
+      expect(described_class.is_comma_separated?(params)).to be_truthy
+    end
+  end
 end

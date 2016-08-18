@@ -9,4 +9,10 @@ describe App::PersonPipeFileParser do
       expect(subject.normalize).to be_a_kind_of(App::Student)
     end
   end
+
+  describe '.is_pipe_separated?' do
+    it 'returns true for valid pipe separated file' do
+      expect(described_class.is_pipe_separated?(params)).to be_truthy
+    end
+  end
 end
