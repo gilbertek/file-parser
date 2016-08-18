@@ -6,18 +6,11 @@ class Processor
   end
 
   def ascending_by_campus_and_last_name
-    byebug
     collections.sort_by { |e| [e.campus, e.last_name] }.map(&:display).join("\n")
-
-        # collections.sort { |a, b| (a.campus <=> b.campus).nonzero? || (a.last_name <=> b.last_name) }.map(&:display).join("\n")
   end
 
   def ascending_by_date_of_birth
-    byebug
-
-    # collections.sort_by { |e| e.date_of_birth }.map(&:display).join("\n")
-
-    collections.sort { |a, b|  b.age <=> b.age }.map(&:display).join("\n")
+    collections.sort_by { |e| e.age }.reverse.map(&:display).join("\n")
   end
 
   def descending_by_last_name

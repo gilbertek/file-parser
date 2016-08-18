@@ -2,8 +2,8 @@
 
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 
-require 'claims'
+require 'app'
 
 input_file = ARGV[0]
-output = Claims::Processor.new(input_file).process
+output = App::Processor.new(input_file).process
 p output

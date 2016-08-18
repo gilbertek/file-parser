@@ -40,6 +40,7 @@ class Student
 
   def calculate_age
     birthday = Date.strptime(date_of_birth, '%m/%d/%Y')
-    Date.today.year - birthday.year
+    # @age = Date.today.year - birthday.year
+    @age = (Date.today - birthday).to_i / 365
   end
 end
