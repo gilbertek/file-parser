@@ -1,32 +1,9 @@
-# <img src='https://cloud.githubusercontent.com/assets/544541/4461515/092962a4-48bb-11e4-8e4c-88bee6e5a321.jpg' width=50> Engineering Code Challenge
-
-To help us get a clearer picture of your skills as a developer, we kindly request you take our code challenge. We encourage you to limit yourself to **4 to 5 hours'** worth of effort.
-
 ## Requirements
 
 * Please write a Ruby program that:
 
   * Assembles a collection of student records by parsing data from 3 different files
   * Displays the collection 3 times, sorted 3 different ways
-
-* Besides a testing framework ([RSpec](https://github.com/rspec/rspec), [test-unit](https://github.com/test-unit/test-unit), or [minitest](https://github.com/seattlerb/minitest)), please only use Ruby and [its standard library](http://www.ruby-doc.org/stdlib/) (i.e. no other gems)
-
-* Please use the latest stable version of Ruby MRI
-
-* What we're looking for here is clear code and elegant object-oriented design. Please avoid imperative or functional coding style, or an overly clever solution.
-
-* When finished, please package and submit your solution as an email attachment. (Please do **not** publish your code anywhere!) Send the email to code-challenge@generalassemb.ly with instructions on how to run your program
-
-## Criteria
-
-The qualities we're looking for are:
-
-|Criterion|Notes|
-|---|---|
-|**Clarity**|Is the intent of the code obvious? Are things named appropriately?|
-|**Maintainability**|How flexible is the code?|
-|**Testability**|Is it easy to test the code? _Please demonstrate with the appropriate degree and type of testing._|
-|**Precision**|Does the code produce the expected output, as provided below?|
 
 ## Input
 
