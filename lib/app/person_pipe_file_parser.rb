@@ -12,7 +12,7 @@ module App
     end
 
     def normalize
-      Student.new(person_hash)
+      Person.new(person_hash)
     end
 
     def self.is_pipe_separated? line

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe App::Student do
+describe App::Person do
   let(:subject) { described_class.new(student_hash) }
 
   describe '#age' do

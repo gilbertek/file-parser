@@ -6,7 +6,7 @@ describe App::PersonPipeFileParser do
 
   describe '#normalize' do
     it 'returns a valid student' do
-      expect(subject.normalize).to be_a_kind_of(App::Student)
+      expect(subject.normalize).to be_a_kind_of(App::Person)
     end
   end
 

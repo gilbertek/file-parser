@@ -1,7 +1,7 @@
 require 'date'
 
 module App
-  class Student
+  class Person
     attr_reader :first_name,
       :last_name,
       :middle_initial,
@@ -14,7 +14,7 @@ module App
       LA: 'Los Angeles',
       NYC: 'New York City',
       SF: 'San Francisco'
-    }
+    }.freeze
 
     def initialize(params)
       if params.size > 1 && params.kind_of?(Hash)
