@@ -12,7 +12,7 @@ module App
       Person.new(person_hash)
     end
 
-    def self.is_comma_separated? line
+    def self.is_comma_separated?(line)
       line =~ DELIMITER_PATTERN
     end
 

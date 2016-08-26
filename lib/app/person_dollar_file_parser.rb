@@ -13,7 +13,7 @@ module App
       Person.new(person_hash)
     end
 
-    def self.is_dollar_separated? line
+    def self.is_dollar_separated?(line)
       line =~ DELIMITER_PATTERN
     end
 

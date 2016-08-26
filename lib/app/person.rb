@@ -38,7 +38,7 @@ module App
     end
 
     def normalize_campus
-      @campus =  CAMPUSES[campus.to_sym] if CAMPUSES.key? campus.to_sym
+      @campus = CAMPUSES[campus.to_sym] if CAMPUSES.key? campus.to_sym
     end
 
     def calculate_age
