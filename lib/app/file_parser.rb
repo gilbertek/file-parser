@@ -1,8 +1,13 @@
 module App
   class FileParser
+    CAMPUSES = {
+      LA: 'Los Angeles',
+      NYC: 'New York City',
+      SF: 'San Francisco'
+    }.freeze
+
     def initialize(data)
       @data        = data
-      @person_hash = build_from_data
     end
 
     def normalize
@@ -12,6 +17,5 @@ module App
     private
 
     attr_reader :data, :person_hash
-
   end
 end
