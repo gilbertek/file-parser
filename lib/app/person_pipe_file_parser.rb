@@ -6,6 +6,11 @@ module App
 
     HEADERS = ['last_name', 'first_name', 'middle_initial', 'campus', 'favorite_color', 'date_of_birth'].freeze
 
+    def initialize(params)
+      super(params)
+      @person_hash = build_from_data
+    end
+
     def normalize
       Person.new(person_hash)
     end
