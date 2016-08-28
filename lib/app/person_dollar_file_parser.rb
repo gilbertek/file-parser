@@ -1,11 +1,11 @@
 module App
-  class PersonDollarFileParser < FileParser
+  class PersonDollarFileParser
     DELIMITER_PATTERN = /\s+\$\s+/.freeze
 
     HEADERS = ['last_name', 'first_name', 'middle_initial', 'campus', 'date_of_birth', 'favorite_color'].freeze
 
     def initialize(params)
-      super(params)
+      @data = params
       @person_hash = build_from_data
     end
 
@@ -18,6 +18,8 @@ module App
     end
 
     private
+
+    attr_reader :data, :person_hash
 
     def build_from_data
       HEADERS.zip(data.split(DELIMITER_PATTERN)).to_h

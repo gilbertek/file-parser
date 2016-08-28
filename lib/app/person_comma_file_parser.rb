@@ -1,10 +1,10 @@
 module App
-  class PersonCommaFileParser < FileParser
+  class PersonCommaFileParser
     DELIMITER_PATTERN = /\,./.freeze
     HEADERS = ['last_name', 'first_name', 'campus', 'favorite_color', 'date_of_birth'].freeze
 
     def initialize(params)
-      super(params)
+      @data = params
       @person_hash = build_from_data
     end
 
@@ -17,6 +17,8 @@ module App
     end
 
     private
+
+    attr_reader :data, :person_hash
 
     def build_from_data
       HEADERS.zip(data.split(DELIMITER_PATTERN)).to_h
